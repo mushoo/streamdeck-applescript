@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+        <meta name=apple-mobile-web-app-capable content=yes>
+        <meta name=apple-mobile-web-app-status-bar-style content=black>
+        <title>Property Inspector Samples PI</title>
+        <link rel="stylesheet" href="css/sdpi.css">
+        <!--link rel="stylesheet" 
+              media="screen and (max-width: 1025px)" 
+              href="css/local.css" -->
+         <link rel="stylesheet" href="css/local.css">
+
+    </head>
+
+    <body>
+        <div class="sdpi-wrapper localbody hiddenx">
+            
+
+    <div class="sdpi-item" id="scriptFile">
+                <div class="sdpi-item-label">Select Script File</div>
+                <div class="sdpi-item-group file" id="filepickergroup">
+                    <input class="sdpi-item-value" type="file" id="elgfilepicker" accept=".scpt">
+                    <label class="sdpi-file-info" for="elgfilepicker">No File...</label>
+                    <label class="sdpi-file-label" for="elgfilepicker">Choose file...</label>
+                 </div>
+             </div>
+             
+            <div type="textarea" class="sdpi-item" id="tdt">
+                <div class="sdpi-item-label up20">Applescript (Inline)</div>
+                <div class="sdpi-item-value textarea">
+                    <textarea type="textarea" id="appleScriptInline" ></textarea>
+
+                </div>
+            </div>
+            <!--
+			<div class="sdpi-item">
+     			<div class="sdpi-item-label">Test</div>
+     			<button class="sdpi-item-value">Test</button>
+			</div>
+			--!>
+
+        </div>
+        <!-- <script src="echomd.js"></script> -->
+        <script src="index_pi.js"></script>
+
+    </body>
+
+    </html>

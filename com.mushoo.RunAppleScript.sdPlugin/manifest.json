@@ -1,0 +1,33 @@
+{
+  "Actions": [
+    {
+      "Icon": "ScriptIcon", 
+      "Name": "RunAppleScript", 
+      "States": [
+        {
+          "Image": "ScriptIcon",
+          "FontSize": "12", 
+          "FontStyle": "Bold", 
+          "TitleAlignment": "bottom", 
+          "TitleColor": "#ffffff",
+          "Title": "Applescript"
+        }
+      ], 
+      "Tooltip": "Run Applescript", 
+      "UUID": "com.mushoo.runapplescript.action"
+    }
+  ], 
+  "Author": "Mike Schapiro", 
+  "CodePath": "RunApplescript", 
+	"PropertyInspectorPath": "index_pi.html", 
+  "Description": "Run an arbitrary chunk of Applescript code, or a .scpt file", 
+  "Name": "RunAppleScript", 
+  "Icon": "ScriptIcon", 
+  "Version": "1.0",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    }
+  ]
+}
