@@ -1,8 +1,8 @@
 {
-  "Description": "Display the number of unread emails from Apple Mail.", 
-  "Name": "Apple Mail", 
-  "com.elgato.applemail.action": {
-    "Name": "Apple Mail", 
-    "Tooltip": "Display the number of unread emails from Apple Mail"
+  "Description": "Run an arbitrary chunk of Applescript code, or a .scpt file", 
+  "Name": "Run AppleScript", 
+  "com.mushoo.runapplescript.action": {
+    "Name": "Run AppleScript", 
+    "Tooltip": "Run an arbitrary chunk of Applescript code, or a .scpt file"
   }
 }
