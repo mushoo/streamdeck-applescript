@@ -188,7 +188,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
         NSString * tempFile = tempDict[@"myScriptFile"];
         NSURL * url = [NSURL fileURLWithPath:tempFile];
         if (tempFile != nil){
-            appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
+            appleScript = [[[NSAppleScript alloc] initWithContentsOfURL:url error:&errors] autorelease];
         }
     }
     else if([tempDict[@"scriptType"] isEqualToString:@"inline"])
@@ -196,7 +196,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
         //Handler for inline scripts
         NSString * tempSource= tempDict[@"myScriptSource"];
         if(tempSource != nil){
-            appleScript = [[NSAppleScript alloc] initWithSource:tempSource];
+            appleScript = [[[NSAppleScript alloc] initWithSource:tempSource] autorelease];
         }
     }
     
