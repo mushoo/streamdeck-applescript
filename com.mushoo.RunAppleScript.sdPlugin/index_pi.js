@@ -8,7 +8,7 @@ var websocket = null,
     isQT = navigator.appVersion.includes('QtWebEngine'),
     onchangeevt = 'oninput'; // 'onchange'; // change this, if you want interactive elements act on any change, or while they're modified
 
-function connectSocket (inPort, inUUID, inRegisterEvent, inInfo, inActionInfo) {
+function connectElgatoStreamDeckSocket (inPort, inUUID, inRegisterEvent, inInfo, inActionInfo) {
     uuid = inUUID;
     // please note: the incoming arguments are of type STRING, so
     // in case of the inActionInfo, we must parse it into JSON first
